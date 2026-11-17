@@ -1,0 +1,19 @@
+# Copy to config/providers.yaml and fill in credentials (never commit secrets).
+providers:
+  - name: openai
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+    models:
+      - name: gpt-4o-mini
+        cost_per_1k: 0.00015
+        latency_ms: 500
+  - name: anthropic
+    base_url: https://api.anthropic.com
+    api_key_env: ANTHROPIC_API_KEY
+    models:
+      - name: claude-3-5-sonnet
+        cost_per_1k: 0.003
+        latency_ms: 1200
+routing:
+  retries: 2
+  backoff_seconds: 0.5
