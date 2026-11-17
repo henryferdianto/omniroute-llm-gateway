@@ -16,3 +16,9 @@ reports/figures/*
 !reports/figures/.gitkeep
 config/providers.yaml
 .env
+
+.pytest_cache/
+*.db
+submission.csv
+reports/*.csv
+index/

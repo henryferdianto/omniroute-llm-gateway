@@ -1,5 +1,2 @@
-fastapi
-uvicorn
-httpx
-pyyaml
-pydantic
+pytest
+# optional: fastapi, uvicorn, httpx, pyyaml
